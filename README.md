@@ -1,6 +1,7 @@
-# Nixvim template
+# Nixvim
 
-This template gives you a good starting point for configuring nixvim standalone.
+This is the configuration of neovim (NixVim) that I am running.
+It is based on [this template](https://github.com/nix-community/nixvim/tree/main/templates/simple)
 
 ## Configuring
 
@@ -15,3 +16,7 @@ To test your configuration simply run the following command
 ```
 nix run .
 ```
+
+## References
+
+- [NixVim](https://github.com/nix-community/nixvim)
