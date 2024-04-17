@@ -4,7 +4,7 @@
 
   colorschemes.catppuccin = {
     enable = true;
-    settings.transparent_background = true;
+    # settings.transparent_background = true;
   };
 
   plugins.treesitter.enable = true;
