@@ -22,8 +22,10 @@
       ];
 
       # Hydra Jobs
-      flake.hydraJobs = {
-	inherit (self) packages;
+      flake = {
+	hydraJobs = {
+	  inherit (self) packages;
+	};
       };
 
       perSystem = {

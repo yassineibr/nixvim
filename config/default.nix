@@ -9,5 +9,4 @@
     ./telescope.nix
     ./explorer.nix
   ];
-  ;
 }
