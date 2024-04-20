@@ -11,6 +11,7 @@
   };
 
   outputs = {
+    self,
     nixvim,
     flake-parts,
     ...
@@ -46,6 +47,11 @@
         packages = {
           # Lets you run `nix run .` to start nixvim
           default = nvim;
+        };
+
+        # Hydra Jobs
+        hydraJobs = {
+          inherit (self) packages;
         };
       };
     };
