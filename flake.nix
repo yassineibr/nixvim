@@ -8,12 +8,14 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     flake-parts.url = "github:hercules-ci/flake-parts";
+    nixneovimplugins.url = "github:NixNeovim/NixNeovimPlugins";
   };
 
   outputs = {
     self,
     nixvim,
     flake-parts,
+    nixpkgs,
     ...
   } @ inputs:
     flake-parts.lib.mkFlake {inherit inputs;} {
@@ -23,9 +25,9 @@
 
       # Hydra Jobs
       flake = {
-	hydraJobs = {
-	  inherit (self) packages;
-	};
+        hydraJobs = {
+          inherit (self) packages;
+        };
       };
 
       perSystem = {
@@ -33,6 +35,12 @@
         system,
         ...
       }: let
+        pkgs = import nixpkgs {
+          inherit system;
+          config.allowUnfree = true;
+          overlays = [inputs.nixneovimplugins.overlays.default];
+        };
+
         nixvimLib = nixvim.lib.${system};
         nixvim' = nixvim.legacyPackages.${system};
         nixvimModule = {
@@ -54,7 +62,6 @@
           # Lets you run `nix run .` to start nixvim
           default = nvim;
         };
-
       };
     };
 }

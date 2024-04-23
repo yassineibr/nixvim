@@ -8,5 +8,6 @@
     ./toggleterm.nix
     ./telescope.nix
     ./explorer.nix
+    ./typst-preview.nix
   ];
 }
