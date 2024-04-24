@@ -1,7 +1,6 @@
-{pkgs, ...}: {
-  extraPlugins = [
-    pkgs.vimExtraPlugins.typst-preview-chomsuke
-  ];
+{ pkgs, ... }:
+{
+  extraPlugins = [ pkgs.vimExtraPlugins.typst-preview-chomsuke ];
   extraConfigLua = ''
     require 'typst-preview'.setup {
       -- Setting this true will enable printing debug information with print()
