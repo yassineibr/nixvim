@@ -16,6 +16,7 @@
   plugins.lsp = {
     enable = true;
     servers = {
+      pyright.enable = true;
       typst-lsp.enable = true;
       nixd.enable = true;
       rust-analyzer.enable = true;
