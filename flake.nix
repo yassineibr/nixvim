@@ -9,6 +9,7 @@
     };
     flake-parts.url = "github:hercules-ci/flake-parts";
     nixneovimplugins.url = "github:NixNeovim/NixNeovimPlugins";
+    systems.url = "github:nix-systems/default-linux";
   };
 
   outputs =
@@ -20,7 +21,7 @@
       ...
     }@inputs:
     flake-parts.lib.mkFlake { inherit inputs; } {
-      systems = [ "x86_64-linux" "aarch64-linux" ];
+      systems = import inputs.systems;
 
       # Hydra Jobs
       flake = {
