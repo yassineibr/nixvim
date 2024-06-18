@@ -9,7 +9,7 @@ on:
     types: [opened, reopened]
 
 jobs:
-  nixvim`:
+  nixvim:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
