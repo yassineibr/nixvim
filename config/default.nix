@@ -12,5 +12,6 @@
     ./telescope.nix
     ./toggleterm.nix
     ./typst-preview.nix
+    ./lsp.nix
   ];
 }
