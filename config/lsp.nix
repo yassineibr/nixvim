@@ -25,6 +25,7 @@
       nixd.enable = true;
       gopls.enable = true;
       templ.enable = true;
+      tinymist.enable = true;
       # rust-analyzer.enable = true;
       # rust-analyzer.installCargo = false;
       # rust-analyzer.installRustc = false;

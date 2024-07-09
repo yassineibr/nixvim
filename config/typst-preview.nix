@@ -1,5 +1,7 @@
 { pkgs, ... }:
 {
+  filetype.extension.typ = "typst";
+
   extraPlugins = [ pkgs.vimExtraPlugins.typst-preview-chomsuke ];
   extraConfigLua = ''
     require 'typst-preview'.setup {
