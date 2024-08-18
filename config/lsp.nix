@@ -21,7 +21,7 @@
     };
     servers = {
       pyright.enable = true;
-      typst-lsp.enable = true;
+      # typst-lsp.enable = true;
       nixd.enable = true;
       gopls.enable = true;
       templ.enable = true;
