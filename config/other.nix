@@ -13,4 +13,6 @@
   plugins.lualine.enable = true;
 
   plugins.which-key.enable = true;
+
+	plugins.web-devicons.enable = true;
 }
