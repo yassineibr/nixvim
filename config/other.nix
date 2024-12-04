@@ -9,6 +9,7 @@
 
   plugins.treesitter.enable = true;
   plugins.treesitter.settings.highlight.enable = true;
+	plugins.treesitter.settings.indent.enable = true;
   # plugins.noice.enable = true;
 
   plugins.lualine.enable = true;
