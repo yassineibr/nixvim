@@ -2,13 +2,12 @@
   plugins.lsp = {
     enable = true;
 
-
     keymaps = {
 
-			diagnostic = {
-				"<leader>j" = "goto_next";
-				"<leader>k" = "goto_prev";
-			};
+      diagnostic = {
+        "<leader>j" = "goto_next";
+        "<leader>k" = "goto_prev";
+      };
 
       lspBuf = {
         K = "hover";
@@ -26,6 +25,7 @@
       gopls.enable = true;
       templ.enable = true;
       tinymist.enable = true;
+      terraform_lsp.enable = true;
       # rust-analyzer.enable = true;
       # rust-analyzer.installCargo = false;
       # rust-analyzer.installRustc = false;
