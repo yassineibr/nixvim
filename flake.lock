@@ -261,11 +261,11 @@
         "poetry2nix": "poetry2nix"
       },
       "locked": {
-        "lastModified": 1735482154,
-        "narHash": "sha256-apq6Vc9yP60syXL7as3uQABgeyZ0X2mQ+BdCvPiOEvo=",
+        "lastModified": 1735827789,
+        "narHash": "sha256-83UrauSrPCVlsCVWZeZmZHHuslFqqD0cr1fzJa3CK0Q=",
         "owner": "NixNeovim",
         "repo": "NixNeovimPlugins",
-        "rev": "c762169a4184596d70194eeaea9f211c4ed9a1fb",
+        "rev": "5a3a58181e51780d8f6a43abd5bb616dc898c4af",
         "type": "github"
       },
       "original": {
@@ -333,11 +333,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1735772847,
-        "narHash": "sha256-g2kXpnAHXpwDfz/4Q2Kwzmee+QQKIhmo4DC6JXA8d18=",
+        "lastModified": 1735802549,
+        "narHash": "sha256-aS03+IGLexQt5HL+tLZqSko6Jpxa+eozqcide/pab34=",
         "owner": "nix-community",
         "repo": "nixvim",
-        "rev": "87ee660991fa0e1b7b4e3f43a6dd1d126e64f3fa",
+        "rev": "3285bbda0aa0151c3b1914758e6950dfb554962f",
         "type": "github"
       },
       "original": {
