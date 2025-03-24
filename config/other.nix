@@ -17,4 +17,6 @@
   plugins.which-key.enable = true;
 
   plugins.web-devicons.enable = true;
+
+  plugins.otter.enable = true;
 }
