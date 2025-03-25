@@ -13,5 +13,6 @@
     ./toggleterm.nix
     ./typst-preview.nix
     ./lsp.nix
+    ./extra-files.nix
   ];
 }
