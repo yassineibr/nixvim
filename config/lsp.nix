@@ -25,9 +25,9 @@
       templ.enable = true;
       tinymist.enable = true;
       terraform_lsp.enable = true;
-      # rust-analyzer.enable = true;
-      # rust-analyzer.installCargo = false;
-      # rust-analyzer.installRustc = false;
+      rust-analyzer.enable = true;
+      rust-analyzer.installCargo = false;
+      rust-analyzer.installRustc = false;
     };
   };
 }
