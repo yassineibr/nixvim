@@ -1,4 +1,13 @@
 {
+  nixConfig = {
+    extra-substituters = [
+      "https://attic.ibrahimi.xyz/system"
+    ];
+    extra-trusted-public-keys = [
+      "system:51hbrsnX2pmCB3z3otgdnt2aq+konejsg/bQ7Qu1W+o="
+    ];
+  };
+
   description = "A nixvim configuration";
 
   inputs = {
